@@ -344,7 +344,7 @@ Algorithmic thinking
 // 4. return the number of seconds
 
 // Translate pseudo code to JavaScript
-function howManySeconds(hours) {
+function howManySecons(hours) {
     return hours * 3600;
     // or
     // let seconds = hours * 60 * 60;
@@ -423,5 +423,7 @@ console.log(lessThan100(83, 34)); // false
 console.log(lessThan100(3, 77)); // true
 
 // ======= End ====== Less Than 100 ======================= //  
+
+
 
 

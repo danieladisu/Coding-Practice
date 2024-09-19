@@ -109,7 +109,7 @@ testIsSeven();
 
 console.log("====== End === Fix the Expression ====")
 
-
+// Day 2 commit starts here
 // Add up the Numbers from a Single Number
 console.log("====== Start === Add up the Numbers from a Single Number ====")
 // Understand the problem statement
@@ -129,6 +129,7 @@ console.log("====== Start === Add up the Numbers from a Single Number ====")
 // 2. take a number as an argument
 // 3. add up all the numbers from 1 to the number you passed to the function
 // 4. return the sum of all the numbers from 1 to the number you passed to the function
+
 
 // Translate pseudo code to JavaScript
 function addUp(num) {
@@ -150,3 +151,131 @@ function testAddUp() {
 testAddUp();
 
 console.log("====== End === Add up the Numbers from a Single Number ====")
+
+// Buggy Code (Part 4)
+console.log("====== Start === Buggy Code (Part 4) ====")
+// Understand the problem statement
+// The code is almost working but the problem is that the function is not returning the correct values.
+// example: maxNum(3, 7) => 7
+// example: maxNum(-1, 0) => 0
+// example: maxNum(1000, 400) => 1000
+
+// Solve it on paper
+// write a function that takes two numbers as arguments
+// compare the two numbers
+// return the maximum number
+
+// Write the pseudo code line by line
+// 1. start the function maxNum
+// 2. take two numbers as arguments
+// 3. compare the two numbers
+// 4. return the maximum number
+
+// Translate pseudo code to JavaScript
+function maxNum(n1, n2) {
+    return Math.max(n1, n2);
+
+    // or
+    // if (n1 > n2) {
+    //     return n1;
+    // } else {
+    //     return n2;
+    // }
+    // or
+    // return n1 > n2 ? n1 : n2;
+
+}
+
+// Test and debug
+console.log(maxNum(3, 7)); // 7
+console.log(maxNum(-1, 0)); // 0
+console.log(maxNum(1000, 400)); // 1000
+
+// Unit test function
+function testMaxNum() {
+    console.log(maxNum(3, 7) === 7);
+    console.log(maxNum(-1, 0) === 0);
+    console.log(maxNum(1000, 400) === 1000);
+}
+
+testMaxNum();
+
+console.log("====== End === Buggy Code (Part 4) ====")
+// greeting
+console.log("====== Start === greeting ====")
+// Understand the problem statement
+// The problem is to write a function that takes a name as an argument and returns a greeting message.
+// example: greeting("Mubashir") => "Hello, my Love!"
+// example: greeting("Matt") => "Hello, Matt!"
+
+// Solve it on paper
+// write a function that takes a name as an argument
+// check if the name is equal to "Mubashir"
+// return "Hello, my Love!" if the name is equal to "Mubashir", otherwise return "Hello, " + name + "!"
+
+// Write the pseudo code line by line
+// 1. start the function greeting
+// 2. take a name as an argument
+// 3. check if the name is equal to "Mubashir"
+// 4. return "Hello, my Love!" if the name is equal to "Mubashir", otherwise return "Hello, " + name + "!"
+
+// Translate pseudo code to JavaScript
+function greeting(name) {
+    return name === "Mubashir" ? "Hello, my Love!" : "Hello, " + name + "!";
+    // or
+    // if(name === "Mubashir") {
+    //     return "Hello, my Love!";
+    // }else{
+    //     return "Hello, " + name + "!";
+    // }
+}
+
+// Test and debug
+console.log(greeting("Mubashir")); // "Hello, my Love!"
+console.log(greeting("Matt")); // "Hello, Matt!"
+
+// Unit test function
+function testGreeting() {
+    console.log(greeting("Mubashir") === "Hello, my Love!");
+    console.log(greeting("Matt") === "Hello, Matt!");
+}
+
+testGreeting();
+
+
+console.log("====== End === greeting ====")
+
+// Using Arrow Functions
+console.log("====== Start === Using Arrow Functions ====")
+//Create a function that returns the given argument, but by using an arrow function.
+// Understand the problem statement
+// The problem is to write a function that returns the given argument, but by using an arrow function.
+// example: returnArg("hello") => "hello"
+// example: returnArg(10) => 10
+
+// Solve it on paper
+// write a function that takes an argument
+// return the given argument
+
+// Write the pseudo code line by line
+// 1. start the function returnArg
+// 2. take an argument
+// 3. return the given argument
+
+// Translate pseudo code to JavaScript
+
+const returnArg = (arg) => {
+    return arg;
+}
+
+
+// Test and debug
+console.log(returnArg("hello")); // "hello"
+console.log(returnArg(10)); // 10
+
+// Unit test function
+function testReturnArg() {
+    console.log(returnArg("hello") === "hello");
+    console.log(returnArg(10) === 10);
+}
+
