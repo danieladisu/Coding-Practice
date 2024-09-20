@@ -279,3 +279,192 @@ function testReturnArg() {
     console.log(returnArg(10) === 10);
 }
 
+// End 
+
+// Day 3 commit started hier 
+
+
+
+// Matchstick Houses
+// Understand the problem statement
+// the problem is to calculate the number of matchsticks in the house
+// example: matchHouses(1) => 6
+// example: matchHouses(4) => 21
+// example: matchHouses(87) => 436
+
+// Solve it on paper
+// Create a function that takes a number (step) as an argument and returns the number of matchsticks in that step. See step 1, 2 and 3 in the image above.
+// Write a function that takes a number as an argument
+// calculate the number of matchsticks in the house
+// return the number of matchsticks in the house
+
+// Write the pseudo code line by line
+// 1. start the function matchHouses
+// 2. take a number as an argument
+// 3. calculate the number of matchsticks in the house
+// 4. return the number of matchsticks in the house
+
+// Translate pseudo code to JavaScript
+function matchHouses(step) {
+    return step === 0 ? 0 : (step * 5) + 1;
+}
+
+// Test and debug
+console.log(matchHouses(1)); // 6
+console.log(matchHouses(2)); // 11
+console.log(matchHouses(3)); // 16
+
+// Unit test function
+function testMatchHouses() {
+    console.log(matchHouses(1) === 6);
+    console.log(matchHouses(2) === 11);
+    console.log(matchHouses(3) === 16);
+}
+
+testMatchHouses();
+
+console.log("====== End === Using Arrow Functions ====")
+
+
+// Buggy Code (Part 7)
+// Mubashir wants to swap two given numbers!
+
+// It is not returning the right values. Can you help him fix it?
+console.log("====== Start === Buggy Code (Part 7) ====")
+// Understand the problem statement
+// the problem is to swap two given numbers
+// example: swap(100, 200) => [200, 100]
+// example: swap(44, 33) => [33, 44]
+// example: swap(21, 12) => [12, 21]
+
+// Solve it on paper
+// write a function that takes two numbers as arguments
+// swap the two numbers
+// return the swapped numbers
+
+// Write the pseudo code line by line
+// 1. start the function swap
+// 2. take two numbers as arguments
+// 3. swap the two numbers
+// 4. return the swapped numbers
+
+// Translate pseudo code to JavaScript
+function swap(a, b) {
+    return [b, a];
+}
+
+// Test and debug
+console.log(swap(100, 200)); // [200, 100]
+console.log(swap(44, 33)); // [33, 44]
+console.log(swap(21, 12)); // [12, 21]
+
+// Unit test function
+function testSwap() {
+    console.log(swap(100, 200).toString() === [200, 100].toString());
+    console.log(swap(44, 33).toString() === [33, 44].toString());
+    console.log(swap(21, 12).toString() === [12, 21].toString());
+}
+
+testSwap();
+
+console.log("====== End === Buggy Code (Part 7) ====")
+
+// Frames Per Second
+// Create a function that returns the number of frames shown in a given number of minutes for a certain FPS.
+console.log("====== Start === Frames Per Second ====")
+// Understand the problem statement
+// the problem is to calculate the number of frames shown in a given number of minutes for a certain FPS.
+// example: frames(1, 1) => 60
+// example: frames(10, 1) => 600
+// example: frames(10, 25) => 15000
+
+// Solve it on paper
+// write a function that takes two numbers as arguments
+// calculate the number of frames shown in a given number of minutes for a certain FPS
+// return the number of frames shown in a given number of minutes for a certain FPS
+
+// Write the pseudo code line by line
+// 1. function frames
+// 2. Arguments: minutes, fps
+// 3. calculate: minutes * fps * 60
+// 4. Save the result: result
+// 5. return result
+
+// Translate pseudo code to JavaScript
+function frames(minutes, fps) {
+    return minutes * fps * 60;
+}
+
+// Test and debug
+console.log(frames(1, 1)); // 60
+console.log(frames(10, 1)); // 600
+console.log(frames(10, 25)); // 15000
+
+// Unit test function
+function testFrames() {
+    console.log(frames(1, 1) === 60);
+    console.log(frames(10, 1) === 600);
+    console.log(frames(10, 25) === 15000);
+}
+
+testFrames();
+
+console.log("====== End === Frames Per Second ====")
+
+// Miserable Parody of a Calculator
+// Create a function that will handle simple math expressions. The input is an expression in the form of a string.
+
+console.log("====== Start === Miserable Parody of a Calculator ====")
+// Understand the problem statement
+// the problem is to handle simple math expressions
+// example: calculator("23+4") => 27
+// example: calculator("45-15") => 30
+// example: calculator("13+2-5*2") => 5
+
+// Solve it on paper
+// write a function that takes a string as an argument
+// handle simple math expressions
+// return the result of the math expressions
+
+
+
+// Write the pseudo code line by line
+// 1. function calculator
+// 2. Arguments: str
+// 3. calculate  the result of the math expressions
+// 4. Save the result: result
+// 5. return result
+
+// Translate pseudo code to JavaScript
+function calculator(str) {
+    return eval(str);
+    // or without eval
+    // return new Function('return ' + str)();
+    // How to work eval ? : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/eval
+
+    
+
+
+}
+
+// Test and debug
+console.log(calculator("23+4")); // 27
+console.log(calculator("45-15")); // 30
+console.log(calculator("13+2-5*2")); // 5
+
+// Unit test function
+function testCalculator() {
+    console.log(calculator("23+4") === 27);
+    console.log(calculator("45-15") === 30);
+    console.log(calculator("13+2-5*2") === 5);
+}
+
+testCalculator();
+
+console.log("====== End === Miserable Parody of a Calculator ====")
+
+
+
+
+
+
