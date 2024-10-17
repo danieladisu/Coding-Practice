@@ -463,8 +463,191 @@ testCalculator();
 
 console.log("====== End === Miserable Parody of a Calculator ====")
 
+// Day 4 commit starts here
+
+// Bitwise Operations
+// Write three functions to calculate the bitwise AND, bitwise OR and bitwise XOR of two numbers.
+console.log("====== Start ==== Bitwise Operations =======")
+
+// Understand the problem statement
+// Bitwise operations are operations that directly manipulate bits.
+// They are used in places where we need to manipulate bits directly.
+// Bitwise operations are used in places where we need to manipulate bits directly.
+
+// Solve it on paper
+// Write three functions to calculate the bitwise AND, bitwise OR and bitwise XOR of two numbers.
+// 1. take two numbers as arguments
+// 2. calculate the bitwise AND of two numbers
+// 3. calculate the bitwise OR of two numbers
+// 4. calculate the bitwise XOR of two numbers
+// 5. return the result of the bitwise AND, OR and XOR of two numbers
+
+// Write the pseudo code line by line
+// 1. start the function bitwiseAND
+// 2. take two numbers as arguments
+// 3. calculate the bitwise AND of two numbers
+// 4. return the result of the bitwise AND of two numbers
+
+function bitwiseAND(n1, n2) {
+    return n1 & n2;
+}
+
+function bitwiseOR(n1, n2) {
+    return n1 | n2;
+}
+
+function bitwiseXOR(n1, n2) {
+    return n1 ^ n2;
+}
+
+// Test and debug
+console.log(bitwiseAND(7, 12)); // 4
+console.log(bitwiseOR(7, 12)); // 15
+
+// Unit test function
+function testBitwiseOperations() {
+    console.log(bitwiseAND(7, 12) === 4);
+    console.log(bitwiseOR(7, 12) === 15);
+    console.log(bitwiseXOR(7, 12) === 11);
+}
+
+testBitwiseOperations();
+
+console.log("====== End ==== Bitwise Operations =======")
+
+// Return the Remainder from Two Numbers
+// There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.
+console.log("====== Start === Return the Remainder from Two Numbers ====")
+// Understand the problem statement
+// the problem is to return the remainder from two numbers
+// example: remainder(1, 3) => 1
+// example: remainder(3, 4) => 3
+// example: remainder(-9, 45) => -9
+
+// Solve it on paper
+// write a function that takes two numbers as arguments
+// calculate the remainder from two numbers
+// return the remainder from two numbers
+
+// Write the pseudo code line by line
+// 1. start the function remainder
+// 2. take two numbers as arguments
+// 3. calculate the remainder from two numbers
+// 4. return the remainder from two numbers
+
+// Translate pseudo code to JavaScript
+function remainder(x, y) {
+    return x % y;
+}
 
 
 
+// Test and debug
+console.log(remainder(1, 3)); // 1
+console.log(remainder(3, 4)); // 3
+console.log(remainder(-9, 45)); // -9
+
+// Unit test function
+function testRemainder() {
+    console.log(remainder(1, 3) === 1);
+    console.log(remainder(3, 4) === 3);
+    console.log(remainder(-9, 45) === -9);
+}
+
+testRemainder();
+
+console.log("====== End === Return the Remainder from Two Numbers ====")
+
+// Basketball Points
+// You are counting points for a basketball game, given the amount of 3-pointers scored and 2-pointers scored, find the final points for the team and return that value.
+console.log("====== Start === Basketball Points ====")
+// Understand the problem statement
+// the problem is to calculate the final points for the team
+// example: points(1, 1) => 5
+// example: points(7, 5) => 29
+// example: points(38, 8) => 100
+
+// Solve it on paper
+// write a function that takes two numbers as arguments
+// calculate the final points for the team
+// return the final points for the team
+
+// Write the pseudo code line by line
+// 1. start the function points
+// 2. take two numbers as arguments
+// 3. calculate the final points for the team
+// 4. return the final points for the team
+
+// Translate pseudo code to JavaScript
+function points(twoPointers, threePointers) {
+    return twoPointers * 2 + threePointers * 3;
+}
+
+const points = (twoPointers, threePointers) => twoPointers * 2 + threePointers * 3;
+
+// Test and debug
+console.log(points(1, 1)); // 5
+console.log(points(7, 5)); // 29
+console.log(points(38, 8)); // 100
+
+// Unit test function
+function testPoints() {
+    console.log(points(1, 1) === 5);
+    console.log(points(7, 5) === 29);
+    console.log(points(38, 8) === 100);
+}
+
+testPoints();
+
+console.log("====== End === Basketball Points ====")
+// Left Shift by Powers of Two
+// The left shift operation is similar to multiplication by powers of two.
+console.log("====== Start === Left Shift by Powers of Two ====")
+// Understand the problem statement
+// the problem is to left shift by powers of two
+// example: shiftToLeft(5, 2) => 20
+// example: shiftToLeft(10, 3) => 80
+// example: shiftToLeft(-32, 2) => -128
+
+// Solve it on paper
+// write a function that takes two numbers as arguments
+// left shift by powers of two
+// return the left shift by powers of two
+
+// Write the pseudo code line by line
+// 1. start the function shiftToLeft
+// 2. take two numbers as arguments
+// 3. left shift by powers of two
+// 4. return the left shift by powers of two
+
+// Translate pseudo code to JavaScript
+function shiftToLeft(x, y) {
+    return x * Math.pow(2, y);
+}
+
+// wuthout Math.pow
+function shiftToLeft(x, y) {
+    return x << y;
+}
+// using if else
+function shiftToLeft(x, y) {
+    return y >= 0 ? x << y : x >> -y;
+}
+
+// Test and debug
+console.log(shiftToLeft(5, 2)); // 20
+console.log(shiftToLeft(10, 3)); // 80
+console.log(shiftToLeft(-32, 2)); // -128
+
+// Unit test function
+function testShiftToLeft() {
+    console.log(shiftToLeft(5, 2) === 20);
+    console.log(shiftToLeft(10, 3) === 80);
+    console.log(shiftToLeft(-32, 2) === -128);
+}
+
+testShiftToLeft();
+
+console.log("====== End === Left Shift by Powers of Two ====")
 
 
